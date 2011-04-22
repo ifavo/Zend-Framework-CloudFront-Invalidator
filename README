@@ -1,3 +1,9 @@
-A PHP5 class for invalidating Amazon CloudFront objects via its API.
+Zend Library Class for invalidating Amazon CloudFront objects via its API.
 
-Read more about it here: http://www.subchild.com/2010/09/17/amazon-cloudfront-php-invalidator/
+The Class is based on https://github.com/subchild/CloudFront-PHP-Invalidator
+
+Example:
+
+$cloudFront = new favo_Service_Amazon_CloudFront();
+$cloudFront->setId( $cloudFrontDistributionId );
+$cloudFront->invalidate ( array( '/file.jpg', 'file2.txt') );
