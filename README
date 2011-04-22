@@ -2,7 +2,13 @@ Zend Library Class for invalidating Amazon CloudFront objects via its API.
 
 The Class is based on https://github.com/subchild/CloudFront-PHP-Invalidator
 
-Example:
+To integrate the class into your existing Zend Framework, copy everything into your library folder
+and add the following line to your application.ini for auto-loading:
+
+autoloaderNamespaces.favo = "favo_"
+
+
+Here's a quick example on how to use it:
 
 Zend_Service_Amazon_S3::setKeys( $accessKey, $secretKey );
 
