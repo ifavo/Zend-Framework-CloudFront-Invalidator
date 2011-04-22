@@ -4,6 +4,8 @@ The Class is based on https://github.com/subchild/CloudFront-PHP-Invalidator
 
 Example:
 
+Zend_Service_Amazon_S3::setKeys( $accessKey, $secretKey );
+
 $cloudFront = new favo_Service_Amazon_CloudFront();
 $cloudFront->setId( $cloudFrontDistributionId );
 $cloudFront->invalidate ( array( '/file.jpg', 'file2.txt') );
